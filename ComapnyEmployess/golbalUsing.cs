@@ -1,0 +1,19 @@
+﻿//global using global::Microsoft.AspNetCore.Builder;
+global using  System;
+global using System.Collections.Generic;
+global using System.ComponentModel.DataAnnotations.Schema;
+global using System.ComponentModel.DataAnnotations;
+global using System.Linq;
+global using System.Text;
+global using System.Threading.Tasks;
+global using LoggerService;
+global using Repository;
+global using Service.Contracts;
+global using Service;
+global using ComapnyEmployess.Extensions;
+global using Microsoft.AspNetCore.HttpOverrides;
+global using NLog;
+global using Contracts;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.EntityFrameworkCore.Design;
+
