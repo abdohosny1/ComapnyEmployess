@@ -1,6 +1,7 @@
 ﻿
 
 
+using ComapnyEmployess.helper;
 using Microsoft.EntityFrameworkCore;
 
 namespace ComapnyEmployess.Extensions
@@ -45,6 +46,11 @@ namespace ComapnyEmployess.Extensions
         public static void ConfigureSqlContext(this IServiceCollection services, IConfiguration configuration) =>
             services.AddSqlServer<RepositoryContext>((configuration.GetConnectionString("sqlConnection")));
 
+
+        //add formater
+        public static IMvcBuilder AddCustomCSVFormatter(this IMvcBuilder builder) =>
+                         builder.AddMvcOptions(config => config.OutputFormatters.Add(new
+                        CsvOutputFormatter()));
 
 
 
